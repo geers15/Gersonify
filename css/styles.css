@@ -5,6 +5,8 @@
     --color-headings: #1b0760;
     --color-body:#918ca4;
 }
+
+/* Typography */
 html{
     font-size: 62.5%;
 }
@@ -50,4 +52,33 @@ p{
         font-size: 2.4rem;
     }
 
+}
+
+/* Links */
+a{
+    text-decoration: none;
+}
+        /* customizing the lettering */
+.link-arrow{
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+        /*putting an arrow after the worded link */
+.link-arrow::after{
+    content: '-->';
+    margin-left: 5px;
+    transition: margin 0.15s;
+}
+        /*have the arrow move 10px to the left when cursor is hovering over it */
+.link-arrow:hover::after{
+    margin-left: 10px;
+
+}
+
+@media screen and (min-width: 1024px){
+    .link-arrow{
+        font-size: 1.5rem;
+    }
 }
