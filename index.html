@@ -8,21 +8,23 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-<div class="callout callout--primary">
-    <div class="grid grid--1x2">
-        <div class="callout__content">
-            <h2 class="callout__heading"> Ready to get Started ?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Adipisci animi architecto excepturi. Eaque esse in laudantium nulla odio omnis voluptatem.
-            </p>
-        </div>
-        <a href="#" class="btn btn--secondary btn--stretched"> Get Started</a>
+<div class="collapsible collapsible--expanded">
+    <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 1</h2>
+    <svg class="icon icon--white collapsible__chevron">
+        <use xlink:href="images/sprite.svg#chevron"></use>
+</svg>
+
+    </header>
+    <div class="collapsible__content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, repellendus!
     </div>
 </div>
+<script src="main.js"></script>
 </body>
 </html >
